@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Portfolio</title>
+  <style>
+    /* Reset and general styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      scroll-behavior: smooth;
+      color: #333;
+    }
+
+    /* Header styles */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #333;
+      color: #fff;
+      padding: 10px 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    .navbar {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+    .navbar li {
+      margin: 0 15px;
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+    .navbar a:hover {
+      color: #00bcd4;
+    }
+
+    /* Hero section styles */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to right, #00bcd4, #4caf50);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    .hero button {
+      background: #fff;
+      color: #00bcd4;
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .hero button:hover {
+      background: #00bcd4;
+      color: #fff;
+    }
+
+    /* Section styles */
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #00bcd4;
+    }
+    section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Footer styles */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+    footer p {
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+  <div class="hero" id="home">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Discover my work, skills, and services. Let's build something great together!</p>
+    <button onclick="scrollToSection('services')">Explore</button>
+  </div>
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>We provide cutting-edge solutions in web development, graphic design, and digital marketing.</p>
+  </section>
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Take a look at some of our latest projects, including websites, apps, and branding designs.</p>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: portfolio@example.com | Phone: +123-456-7890</p>
+  </section>
+  <footer>
+    <p>&copy; 2024 Modern Portfolio. All rights reserved.</p>
+  </footer>
+  <script>
+    function scrollToSection(id) {
+      const section = document.getElementById(id);
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
